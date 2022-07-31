@@ -10,10 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/kwojtowicz97/mern_ecommerce.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Kamil Wójtowicz",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/kwojtowicz97/mern_ecommerce/issues"
   },
-  "homepage": "https://github.com/kwojtowicz97/mern_ecommerce#readme"
+  "homepage": "https://github.com/kwojtowicz97/mern_ecommerce#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
