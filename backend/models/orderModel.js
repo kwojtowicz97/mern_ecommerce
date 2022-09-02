@@ -61,6 +61,11 @@ const orderSchema = mongoose.Schema(
       required: true,
       dafault: 0.0,
     },
+    itemsPrice: {
+      type: Number,
+      required: true,
+      dafault: 0.0,
+    },
     shippingPrice: {
       type: Number,
       required: true,
@@ -73,7 +78,6 @@ const orderSchema = mongoose.Schema(
     },
     isPaid: {
       type: Boolean,
-      required: true,
       dafault: false,
     },
     paidAt: {
@@ -81,14 +85,13 @@ const orderSchema = mongoose.Schema(
     },
     isDelivered: {
       type: Boolean,
-      required: true,
       dafault: false,
     },
     deliveredAt: {
       type: Date,
     },
   },
-  { timeStamps: true }
+  { timestamps: true }
 )
 
 const Order = mongoose.model('Order', orderSchema)
